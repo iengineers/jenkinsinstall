@@ -38,7 +38,7 @@ cd /tmp ; mv sonar-runner-2.4 /opt
 #Set JAVA_HOME & MAVEN_HOME as environment variables on Jenkins machine
 mkdir -p /home/backup
 cp -p /etc/profile /home/backup/profile_`date +%d%b%Y-%H%M`
-echo "MAVEN_HOME=/opt/apache-maven-3.8.3" >> /etc/profile
+echo "MAVEN_HOME=/opt/apache-maven-3.8.5" >> /etc/profile
 #echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /etc/profile
 echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> /etc/profile
 echo "PATH=\$JAVA_HOME/bin:\$MAVEN_HOME/bin:\$PATH" >> /etc/profile

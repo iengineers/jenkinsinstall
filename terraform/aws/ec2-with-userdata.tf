@@ -14,9 +14,9 @@ resource "aws_instance" "test-instances" {
   user_data = <<-EOF
                 #! /bin/bash
                 sudo apt-get update
-                sudo git clone http://github.com/lerndevops/labs
-                sudo chmod -R 775 labs
-                sudo labs/cloud/setup-user.sh
+                sudo git clone http://github.com/iengineers/jenkinsinstall
+                sudo chmod -R 775 jenkinsinstall
+                sudo jenkinsinstall/cloud/setup-user.sh
         EOF
 
   tags = {
